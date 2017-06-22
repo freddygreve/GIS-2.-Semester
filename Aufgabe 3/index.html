@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Häufig gestellte Fragen (FAQ) zu JavaScript
+        </title>
+        <meta charset="utf-8">
+        <style type="text/css" media="screen">
+        dt { margin-bottom: .5em; font-size: 125%; cursor: pointer;}
+        dd { margin-bottom: 1em; display: none;}
+        </style>
+        <script type="text/javascript">
+            function toggle (element) {
+                if (element.nextElementSibling.style.display == "block") {
+                    element.nextElementSibling.style.display = "none";
+                } else {
+                    element.nextElementSibling.style.display = "block";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>
+            Häufig gestellte Fragen zu JavaScript
+        </h1>
+        <dl id="faq">
+            <dt onclick="toggle(this);">
+                Benötige ich eine Entwicklungsumgebung, um mit JavaScript zu arbeiten?
+            </dt>
+            <dd>
+                Nein. Wie bei HTML brauchen Sie lediglich einen Texteditor und einen Browser, 
+                der JavaScript unterstützt.
+				Vielleicht verwechseln Sie JavaScript mit Java, einer umfangreicheren Programmiersprache, 
+				die zum Ausführen von Programmen mindestens einen Compiler benötigt. Werkzeuge wie FireBug
+				 für Firefox, die Internet Explorer Developer Toolbar und Web Inspector für Safari können 
+				 Ihnen das Leben jedoch erleichtern. Schauen Sie in den Dokumentationen zu diesen Tools 
+				 nach, um mehr über ihre JavaScript-Funktionen zu lernen.
+            </dd>
+            <dt onclick="toggle(this);">
+                Was ist AJAX?
+            </dt>
+            <dd>
+                Ein Thema, das wir noch nicht behandelt haben, ist AJAX. AJAX steht für Asynchronous JavaScript And Xml 
+				und beschreibt ein Technik für Skripte, 
+				die mit dem Server kommunizieren, ohne dass eine Webseite vollständig neu geladen werden muss. 
+				Beispielsweise können Sie es verwenden, um Informationen abzurufen und auf der Seite anzuzeigen oder ein 
+				Formular abzuschicken, und das alles, ohne die ganze Seite im Browser zu verändern. 
+				AJAX wird später noch ausführlicher behandelt.
+            </dd>
+            <dt onclick="toggle(this);">
+                Wenn ich JavaScript einsetze, muss ich Benutzer berÃ¼cksichtigen, deren Browser möglicherweise kein JavaScript unterstützen oder die es abgeschaltet haben?
+            </dt>
+            <dd>
+                Einige Schätzungen besagen, dass Ã¼ber 90% aller Webbenutzer JavaScript aktiviert haben. 
+                Sie sollten jedoch Benutzer ohne JavaScript berÃ¼cksichtigen, sofern Sie keinen wirklich guten Grund dafür haben, 
+                es nicht zu tun. Sie müssen Ihnen keine gleichwertige Erfahrung bieten, aber sie sollten 
+                in der Lage sein, Ihre Seiten aufzurufen. Wenn Sie z.B. einen Onlineshop haben, wollen Sie
+                 dann wirklich Benutzer nur wegen ihrer Browserkonfiguration aussen vor lassen?
+            </dd>
+        </dl>
+		Ende
+    </body>
+</html>
