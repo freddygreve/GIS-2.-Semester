@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Bild-Effekte
+        </title>
+        <script type="text/javascript">
+            function grossesbild (link) {
+                document.getElementById("gross").src = link;
+            }
+        </script>
+        
+        <style type="text/css">
+            img {
+                width: 200px;
+                height: 150px;
+            }
+            #gross {
+                width: 800px;
+                height: 533px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            Bildeffekte
+        </h1>
+        <img src="image/ushuaia_klein.jpg" onmouseenter="grossesbild('image/ushuaia.jpg');" alt="Ushuaia (auf Feuerland)">
+        <img src="image/sonnenuntergang_klein.jpg"  onmouseenter="grossesbild('image/sonnenuntergang.jpg');" alt="Sonnenuntergang">
+        <img src="image/schwarzwaldnebel1_klein.jpg"  onmouseenter="grossesbild('image/schwarzwaldnebel1.jpg');" alt="Sonnenuntergang">
+        <img src="image/schwarzwaldnebel2_klein.jpg"  onmouseenter="grossesbild('image/schwarzwaldnebel2.jpg');" alt="Sonnenuntergang"><br>
+        <img src="image/ushuaia.jpg" id="gross" alt="Sonnenuntergang (im Schwarzwald)">
+    </body>
+</html>
