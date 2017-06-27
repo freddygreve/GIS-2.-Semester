@@ -1,6 +1,6 @@
 <?php
     $suche = utf8_decode($_REQUEST["q"]);
-    $mysqli = new mysqli("dbs.hs-furtwangen.de", "TestUser", "TestGIS", "prof_taube");
+    $mysqli = new mysqli("dbs.hs-furtwangen.de", "TestUser", "*******", "prof_taube");
     $sql = "SELECT * FROM flughafen WHERE `stadtname` = '$suche' LIMIT 5";
     $result = $mysqli->query($sql);
     while($row = mysqli_fetch_object($result)) {
